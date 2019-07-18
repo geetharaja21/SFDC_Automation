@@ -1,0 +1,8 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ <suite name="sfdcsuite">
+ <test name="testngTest">
+ <classes>
+ <class name="com.selenium.SalesforceE2E.E2ESFDCTest" />
+ </classes>
+ </test>
+</suite>
