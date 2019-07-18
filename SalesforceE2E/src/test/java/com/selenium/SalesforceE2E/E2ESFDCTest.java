@@ -57,6 +57,7 @@ public class E2ESFDCTest extends ReusableFunctions{
 	@Test(priority=2)
 	public static void Tc1_login() throws InterruptedException {
 
+		System.out.println("Welcome to Salesforce Automation");
 		CreateTestScriptReport("Tc1_login");
 		launchURL();
 		//Get Username
@@ -80,6 +81,7 @@ public class E2ESFDCTest extends ReusableFunctions{
 	@Test(priority=3)
 	public static void Tc2_LoginError() throws InterruptedException {
 
+		
 		CreateTestScriptReport("Tc2_LoginError");
 		launchURL();
 		//Get Username
