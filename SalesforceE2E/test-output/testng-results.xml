@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="134893" started-at="2019-07-18T17:51:48Z" finished-at="2019-07-18T17:54:03Z">
+  <suite name="Default suite" duration-ms="128474" started-at="2019-07-19T20:50:15Z" finished-at="2019-07-19T20:52:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="134893" started-at="2019-07-18T17:51:48Z" finished-at="2019-07-18T17:54:03Z">
+    <test name="Default test" duration-ms="128474" started-at="2019-07-19T20:50:15Z" finished-at="2019-07-19T20:52:23Z">
       <class name="com.selenium.SalesforceE2E.E2ESFDCTest">
-        <test-method status="PASS" signature="initialize_driver()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="initialize_driver" is-config="true" duration-ms="2931" started-at="2019-07-18T17:51:48Z" finished-at="2019-07-18T17:51:51Z">
+        <test-method status="PASS" signature="initialize_driver()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="initialize_driver" is-config="true" duration-ms="2930" started-at="2019-07-19T20:50:15Z" finished-at="2019-07-19T20:50:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize_driver -->
-        <test-method status="PASS" signature="launchURL()[pri:1, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="launchURL" duration-ms="10673" started-at="2019-07-18T17:51:51Z" finished-at="2019-07-18T17:52:02Z">
+        <test-method status="PASS" signature="launchURL()[pri:1, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="launchURL" duration-ms="10653" started-at="2019-07-19T20:50:18Z" finished-at="2019-07-19T20:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method status="PASS" signature="Tc1_login()[pri:2, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="Tc1_login" duration-ms="25999" started-at="2019-07-18T17:52:02Z" finished-at="2019-07-18T17:52:28Z">
+        <test-method status="PASS" signature="Tc1_login()[pri:2, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="Tc1_login" duration-ms="24547" started-at="2019-07-19T20:50:29Z" finished-at="2019-07-19T20:50:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tc1_login -->
-        <test-method status="PASS" signature="Tc2_LoginError()[pri:3, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="Tc2_LoginError" duration-ms="15023" started-at="2019-07-18T17:52:28Z" finished-at="2019-07-18T17:52:43Z">
+        <test-method status="PASS" signature="Tc2_LoginError()[pri:3, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="Tc2_LoginError" duration-ms="14561" started-at="2019-07-19T20:50:53Z" finished-at="2019-07-19T20:51:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tc2_LoginError -->
-        <test-method status="PASS" signature="TC3_CheckRememberMe()[pri:4, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="TC3_CheckRememberMe" duration-ms="41133" started-at="2019-07-18T17:52:43Z" finished-at="2019-07-18T17:53:24Z">
+        <test-method status="PASS" signature="TC3_CheckRememberMe()[pri:4, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="TC3_CheckRememberMe" duration-ms="37168" started-at="2019-07-19T20:51:08Z" finished-at="2019-07-19T20:51:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC3_CheckRememberMe -->
-        <test-method status="PASS" signature="TC4A_ForgotPassword()[pri:5, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="TC4A_ForgotPassword" duration-ms="17394" started-at="2019-07-18T17:53:24Z" finished-at="2019-07-18T17:53:41Z">
+        <test-method status="PASS" signature="TC4A_ForgotPassword()[pri:5, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="TC4A_ForgotPassword" duration-ms="18713" started-at="2019-07-19T20:51:45Z" finished-at="2019-07-19T20:52:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC4A_ForgotPassword -->
-        <test-method status="PASS" signature="TC4B_ValidateLoginErrorMessage()[pri:6, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="TC4B_ValidateLoginErrorMessage" duration-ms="21484" started-at="2019-07-18T17:53:41Z" finished-at="2019-07-18T17:54:03Z">
+        <test-method status="PASS" signature="TC4B_ValidateLoginErrorMessage()[pri:6, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="TC4B_ValidateLoginErrorMessage" duration-ms="19410" started-at="2019-07-19T20:52:04Z" finished-at="2019-07-19T20:52:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC4B_ValidateLoginErrorMessage -->
-        <test-method status="PASS" signature="logger()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="logger" is-config="true" duration-ms="222" started-at="2019-07-18T17:54:03Z" finished-at="2019-07-18T17:54:03Z">
+        <test-method status="PASS" signature="logger()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="logger" is-config="true" duration-ms="447" started-at="2019-07-19T20:52:23Z" finished-at="2019-07-19T20:52:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
