@@ -213,7 +213,7 @@ public class E2ESFDCTest extends ReusableFunctions{
 		Thread.sleep(3000);
 		driver.switchTo().window(getWindow[1]).close();
 	}
-	//@Test(priority=7)
+	//@Test(priority=8)
 //	public static void Tc07_MySettings() throws InterruptedException {
 //		
 //		CreateTestScriptReport("Tc07_MySettings");
@@ -308,7 +308,7 @@ public class E2ESFDCTest extends ReusableFunctions{
 //		System.out.println("PopUP displayed successfully");
 //		Thread.sleep(15000);
 //			
-////		WebElement DismissAll=driver.findElement(By.xpath("//input[@id='dismiss_all']"));
-////		DismissAll.click();
+//		WebElement DismissAll=driver.findElement(By.xpath("//input[@id='dismiss_all']"));
+//		DismissAll.click();
 //	}
 }
