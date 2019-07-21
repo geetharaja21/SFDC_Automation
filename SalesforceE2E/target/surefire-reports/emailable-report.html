@@ -9,35 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">sfdcsuite</th></tr>
-<tr><td><a href="#t0">testngTest</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">90,699</td><td></td><td></td></tr>
+<tr><td><a href="#t0">testngTest</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">160,412</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">sfdcsuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">testngTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.selenium.SalesforceE2E.E2ESFDCTest</td><td><a href="#m0">TC3_CheckRememberMe</a></td><td rowspan="1">1563672157158</td><td rowspan="1">25925</td></tr><tr class="failedeven"><td><a href="#m1">TC4A_ForgotPassword</a></td><td rowspan="1">1563672183097</td><td rowspan="1">3196</td></tr><tr><th colspan="4">testngTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.selenium.SalesforceE2E.E2ESFDCTest</td><td><a href="#m2">TC4B_ValidateLoginErrorMessage</a></td><td rowspan="1">1563672186298</td><td rowspan="1">16333</td></tr><tr class="passedeven"><td><a href="#m3">Tc1_login</a></td><td rowspan="1">1563672122786</td><td rowspan="1">22868</td></tr><tr class="passedeven"><td><a href="#m4">Tc2_LoginError</a></td><td rowspan="1">1563672145655</td><td rowspan="1">11502</td></tr><tr class="passedeven"><td><a href="#m5">launchURL</a></td><td rowspan="1">1563672115043</td><td rowspan="1">7741</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">sfdcsuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">testngTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.selenium.SalesforceE2E.E2ESFDCTest</td><td><a href="#m0">Tc08_DeveloperConsole</a></td><td rowspan="1">1563692108952</td><td rowspan="1">49735</td></tr><tr class="passedeven"><td><a href="#m1">Tc1_login</a></td><td rowspan="1">1563692010327</td><td rowspan="1">21894</td></tr><tr class="passedeven"><td><a href="#m2">Tc2_LoginError</a></td><td rowspan="1">1563692032222</td><td rowspan="1">12006</td></tr><tr class="passedeven"><td><a href="#m3">Tc3_CheckRememberMe</a></td><td rowspan="1">1563692044229</td><td rowspan="1">32719</td></tr><tr class="passedeven"><td><a href="#m4">Tc4A_ForgotPassword</a></td><td rowspan="1">1563692076948</td><td rowspan="1">15242</td></tr><tr class="passedeven"><td><a href="#m5">Tc4B_ValidateLoginErrorMessage</a></td><td rowspan="1">1563692092191</td><td rowspan="1">16761</td></tr><tr class="passedeven"><td><a href="#m6">launchURL</a></td><td rowspan="1">1563692002407</td><td rowspan="1">7918</td></tr></tbody>
 </table>
-<h2>testngTest</h2><h3 id="m0">com.selenium.SalesforceE2E.E2ESFDCTest#TC3_CheckRememberMe</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.selenium.SalesforceE2E.ReusableFunctions.mouseOver(ReusableFunctions.java:160)
-	at com.selenium.SalesforceE2E.E2ESFDCTest.TC3_CheckRememberMe(E2ESFDCTest.java:127)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.selenium.SalesforceE2E.E2ESFDCTest#TC4A_ForgotPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 8 milliseconds
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;DESKTOP-FVP1BCF&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62302}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\Venkat\AppData\Local\Temp\scoped_dir18728_30766}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: bee5af893343fc32053f37916903015e
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:925)
-	at com.selenium.SalesforceE2E.E2ESFDCTest.launchURL(E2ESFDCTest.java:49)
-	at com.selenium.SalesforceE2E.E2ESFDCTest.TC4A_ForgotPassword(E2ESFDCTest.java:145)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.selenium.SalesforceE2E.E2ESFDCTest#TC4B_ValidateLoginErrorMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.selenium.SalesforceE2E.E2ESFDCTest#Tc1_login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.selenium.SalesforceE2E.E2ESFDCTest#Tc2_LoginError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.selenium.SalesforceE2E.E2ESFDCTest#launchURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>testngTest</h2><h3 id="m0">com.selenium.SalesforceE2E.E2ESFDCTest#Tc08_DeveloperConsole</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.selenium.SalesforceE2E.E2ESFDCTest#Tc1_login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.selenium.SalesforceE2E.E2ESFDCTest#Tc2_LoginError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.selenium.SalesforceE2E.E2ESFDCTest#Tc3_CheckRememberMe</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.selenium.SalesforceE2E.E2ESFDCTest#Tc4A_ForgotPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.selenium.SalesforceE2E.E2ESFDCTest#Tc4B_ValidateLoginErrorMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.selenium.SalesforceE2E.E2ESFDCTest#launchURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

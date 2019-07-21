@@ -1,5 +1,6 @@
 package com.selenium.SalesforceE2E;
 
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -13,6 +14,7 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 //import com.salesforce.maybatch.ReusableMethods;
+//import com.selenium.SalesforceE2E.ReusableFunctions;
 
 public class E2ESFDCTest extends ReusableFunctions{
 
@@ -51,7 +53,7 @@ public class E2ESFDCTest extends ReusableFunctions{
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 		//delete all cookies
-		driver.manage().deleteAllCookies();
+		//driver.manage().deleteAllCookies();
 	}
 
 	@Test(priority=2)
@@ -75,7 +77,7 @@ public class E2ESFDCTest extends ReusableFunctions{
 		clickButton(loginButton,"Login");
 		System.out.println("login done successfull");
 		Thread.sleep(7000);
-		driver.close();
+		//driver.close();
 	}
 
 	@Test(priority=3)
@@ -96,9 +98,9 @@ public class E2ESFDCTest extends ReusableFunctions{
 	}
 	
 	@Test(priority=4)
-	public static void TC3_CheckRememberMe() throws InterruptedException {
+	public static void Tc3_CheckRememberMe() throws InterruptedException {
 
-		CreateTestScriptReport("Tc2_CheckRememberMe");
+		CreateTestScriptReport("Tc3_CheckRememberMe");
 		launchURL();
 
 		//Get Username
@@ -141,9 +143,9 @@ public class E2ESFDCTest extends ReusableFunctions{
 	}
 
 	@Test(priority=5)
-	public static void TC4A_ForgotPassword() throws InterruptedException {
+	public static void Tc4A_ForgotPassword() throws InterruptedException {
 
-		CreateTestScriptReport("TC4A_ForgotPassword");
+		CreateTestScriptReport("Tc4A_ForgotPassword");
 		launchURL();
 
 		//Get Username
@@ -164,9 +166,9 @@ public class E2ESFDCTest extends ReusableFunctions{
 	}
 
 	@Test(priority=6)
-	public static void TC4B_ValidateLoginErrorMessage() throws InterruptedException {
+	public static void Tc4B_ValidateLoginErrorMessage() throws InterruptedException {
 
-		CreateTestScriptReport("TC4B_ValidateLoginErrorMessage");
+		CreateTestScriptReport("Tc4B_ValidateLoginErrorMessage");
 		launchURL();
 		//Get Username
 		WebElement userName=driver.findElement(By.name("username"));
@@ -191,97 +193,124 @@ public class E2ESFDCTest extends ReusableFunctions{
 	}
 	
 	@Test(priority=7)
-	public static void MySettings() throws InterruptedException {
-		WebElement UserMenuChk1=driver.findElement(By.xpath("//div[@id='userNav-arrow']"));
-		mouseOver(UserMenuChk1,driver);
+	public static void Tc08_DeveloperConsole() throws InterruptedException {
+		
+		CreateTestScriptReport("Tc08_DeveloperConsole");
+		launchURL();
+		Tc1_login();
+		Thread.sleep(5000);
+		WebElement UserMenuChk2=driver.findElement(By.xpath("//div[@id='userNav-arrow']"));
+		mouseOver(UserMenuChk2,driver);
+		Thread.sleep(5000);
 		System.out.println("Checked for UserMenu DropDown");
+				
+		WebElement DeveloperConsole=driver.findElement(By.xpath("//a[@class='debugLogLink menuButtonMenuLink']"));
+		clickButton(DeveloperConsole,"DeveloperConsole");
+		System.out.println("Clicked on Developer Console Option Successfully");
 		Thread.sleep(5000);
 		
-		WebElement MySettings=driver.findElement(By.xpath("//a[contains(text(),'My Settings')]"));
-		clickButton(MySettings,"MySettings");
-		System.out.println("Clicked on My Settings Option Successfully");
-				
-		WebElement Personal=driver.findElement(By.xpath("//span[@id='PersonalInfo_font']"));
-		clickButton(Personal,"Personal");
-		System.out.println("Personal Link clicked successfully");
-				
-		WebElement LoginHistory=driver.findElement(By.xpath("//span[@id='LoginHistory_font']"));
-		clickButton(LoginHistory,"Login History");
-		System.out.println("Login History has been clicked Successfully");
-		
-		
-		WebElement DownloadLoginHistory=driver.findElement(By.xpath("//a[contains(text(),'Download login history for last six months, includ')]"));
-		clickButton(DownloadLoginHistory,"DownloadLoginHistory");
-		System.out.println("Downloaded login History successfully");
-		Thread.sleep(5000);
-		
-		WebElement DisplayAndLayout=driver.findElement(By.xpath("//span[@id='DisplayAndLayout_font']"));
-		clickButton(DisplayAndLayout,"DisplayAndLayout");
-		System.out.println("Display and Layout link clicked Successfully");
-				
-		WebElement CustomizeMyTabs=driver.findElement(By.xpath("//span[@id='CustomizeTabs_font']"));
-		clickButton(CustomizeMyTabs,"CustomizeMyTabs");
-		System.out.println("Customize My Tabs Link Clicked Successfully");
-				
-		WebElement CustomApp=driver.findElement(By.xpath("//select[@id='p4']"));
-		selectElementByIndexMethod(CustomApp,1);
-		//Select custom=new Select(CustomApp);
-		//custom.selectByIndex(1);
-		
-		WebElement AvailableTabs=driver.findElement(By.xpath("//select[@id='duel_select_0']"));
-		selectElementByValueMethod(AvailableTabs,"report");
-		//Select selectTabs=new Select(AvailableTabs);
-		//selectTabs.selectByValue("report");
-		
-		WebElement Add=driver.findElement(By.xpath("//img[@class='rightArrowIcon']"));
-		clickButton(Add,"Add");
-		System.out.println("Reports field has been added to Selected Tab List Successfully and also added on the links top");
-				
-		WebElement save1=driver.findElement(By.xpath("//input[@name='save']"));
-		clickButton(save1,"Save1");
-		Thread.sleep(5000);
-		
-		WebElement Email=driver.findElement(By.id("EmailSetup_font"));
-		clickButton(Email,"Email");
-		System.out.println("Email Link Clicked Successfully");
-				
-		WebElement MyEmailSettings=driver.findElement(By.xpath("//span[@id='EmailSettings_font']"));
-		clickButton(MyEmailSettings,"MyEmailSettings");
-		Thread.sleep(5000);
-		
-		WebElement sendThrough=driver.findElement(By.xpath("//input[@id='use_external_email1']"));
-		clickButton(sendThrough,"sendThrough");
-		
-		WebElement EmailName=driver.findElement(By.id("sender_name"));
-		EmailName.clear();
-		enterText(EmailName,"HemaRaja","Email Name");
-		//EmailName.sendKeys("HemaRaja");
-		
-		WebElement EmailAddr=driver.findElement(By.id("sender_email"));
-		EmailAddr.clear();
-		enterText(EmailName,"abc123@gmail.com","Email Address");
-		//EmailAddr.sendKeys("abc123@gmail.com");
-		Thread.sleep(5000);
-		
-		WebElement Bcc=driver.findElement(By.xpath("//input[@id='auto_bcc1']"));
-		radiobutton_Select(Bcc,"Click on Bcc");
-		
-		WebElement SaveButton=driver.findElement(By.xpath("//input[@name='save']"));
-		clickButton(SaveButton,"SaveButton");
-		System.out.println("Email Settings saved successfully");
-		
-		WebElement CalendarAndReminders=driver.findElement(By.id("CalendarAndReminders_font"));
-		clickButton(CalendarAndReminders,"CalendarAndReminders");
-		
-		WebElement ActivityReminder=driver.findElement(By.xpath("//span[@id='Reminders_font']"));
-		clickButton(ActivityReminder,"ActivityReminder");
-		
-		WebElement OpenReminder=driver.findElement(By.id("testbtn"));
-		clickButton(OpenReminder,"OpenReminder");
-		System.out.println("PopUP displayed successfully");
-		Thread.sleep(15000);
-			
+		String oldWindow=driver.getWindowHandle();
+		Set<String> getAllWindows=driver.getWindowHandles();
+		String[] getWindow=getAllWindows.toArray(new String[getAllWindows.size()]);
+		Thread.sleep(3000);
+		driver.switchTo().window(getWindow[1]).close();
+	}
+	//@Test(priority=8)
+//	public static void Tc07_MySettings() throws InterruptedException {
+//		
+//		CreateTestScriptReport("Tc07_MySettings");
+//		launchURL();
+//		Tc1_login();
+//		WebElement UserMenuChk1=driver.findElement(By.xpath("//span[@id='userNavLabel']"));
+//		mouseOver(UserMenuChk1,driver);
+//		System.out.println("Checked for UserMenu DropDown");
+//		Thread.sleep(5000);
+//		
+//		WebElement MySettings=driver.findElement(By.xpath("//a[contains(text(),'My Settings')]"));
+//		clickButton(MySettings,"MySettings");
+//		System.out.println("Clicked on My Settings Option Successfully");
+//				
+//		WebElement Personal=driver.findElement(By.xpath("//span[@id='PersonalInfo_font']"));
+//		clickButton(Personal,"Personal");
+//		System.out.println("Personal Link clicked successfully");
+//				
+//		WebElement LoginHistory=driver.findElement(By.xpath("//span[@id='LoginHistory_font']"));
+//		clickButton(LoginHistory,"Login History");
+//		System.out.println("Login History has been clicked Successfully");
+//		
+//		
+//		WebElement DownloadLoginHistory=driver.findElement(By.xpath("//a[contains(text(),'Download login history for last six months, includ')]"));
+//		clickButton(DownloadLoginHistory,"DownloadLoginHistory");
+//		System.out.println("Downloaded login History successfully");
+//		Thread.sleep(5000);
+//		
+//		WebElement DisplayAndLayout=driver.findElement(By.xpath("//span[@id='DisplayAndLayout_font']"));
+//		clickButton(DisplayAndLayout,"DisplayAndLayout");
+//		System.out.println("Display and Layout link clicked Successfully");
+//				
+//		WebElement CustomizeMyTabs=driver.findElement(By.xpath("//span[@id='CustomizeTabs_font']"));
+//		clickButton(CustomizeMyTabs,"CustomizeMyTabs");
+//		System.out.println("Customize My Tabs Link Clicked Successfully");
+//				
+//		WebElement CustomApp=driver.findElement(By.xpath("//select[@id='p4']"));
+//		selectElementByIndexMethod(CustomApp,1);
+//		//Select custom=new Select(CustomApp);
+//		//custom.selectByIndex(1);
+//		
+//		WebElement AvailableTabs=driver.findElement(By.xpath("//select[@id='duel_select_0']"));
+//		selectElementByValueMethod(AvailableTabs,"report");
+//		//Select selectTabs=new Select(AvailableTabs);
+//		//selectTabs.selectByValue("report");
+//		
+//		WebElement Add=driver.findElement(By.xpath("//img[@class='rightArrowIcon']"));
+//		clickButton(Add,"Add");
+//		System.out.println("Reports field has been added to Selected Tab List Successfully and also added on the links top");
+//				
+//		WebElement save1=driver.findElement(By.xpath("//input[@name='save']"));
+//		clickButton(save1,"Save1");
+//		Thread.sleep(5000);
+//		
+//		WebElement Email=driver.findElement(By.id("EmailSetup_font"));
+//		clickButton(Email,"Email");
+//		System.out.println("Email Link Clicked Successfully");
+//				
+//		WebElement MyEmailSettings=driver.findElement(By.xpath("//span[@id='EmailSettings_font']"));
+//		clickButton(MyEmailSettings,"MyEmailSettings");
+//		Thread.sleep(5000);
+//		
+//		WebElement sendThrough=driver.findElement(By.xpath("//input[@id='use_external_email1']"));
+//		clickButton(sendThrough,"sendThrough");
+//		
+//		WebElement EmailName=driver.findElement(By.id("sender_name"));
+//		EmailName.clear();
+//		enterText(EmailName,"HemaRaja","Email Name");
+//		//EmailName.sendKeys("HemaRaja");
+//		
+//		WebElement EmailAddr=driver.findElement(By.id("sender_email"));
+//		EmailAddr.clear();
+//		enterText(EmailName,"abc123@gmail.com","Email Address");
+//		//EmailAddr.sendKeys("abc123@gmail.com");
+//		Thread.sleep(5000);
+//		
+//		WebElement Bcc=driver.findElement(By.xpath("//input[@id='auto_bcc1']"));
+//		radiobutton_Select(Bcc,"Click on Bcc");
+//		
+//		WebElement SaveButton=driver.findElement(By.xpath("//input[@name='save']"));
+//		clickButton(SaveButton,"SaveButton");
+//		System.out.println("Email Settings saved successfully");
+//		
+//		WebElement CalendarAndReminders=driver.findElement(By.id("CalendarAndReminders_font"));
+//		clickButton(CalendarAndReminders,"CalendarAndReminders");
+//		
+//		WebElement ActivityReminder=driver.findElement(By.xpath("//span[@id='Reminders_font']"));
+//		clickButton(ActivityReminder,"ActivityReminder");
+//		
+//		WebElement OpenReminder=driver.findElement(By.id("testbtn"));
+//		clickButton(OpenReminder,"OpenReminder");
+//		System.out.println("PopUP displayed successfully");
+//		Thread.sleep(15000);
+//			
 //		WebElement DismissAll=driver.findElement(By.xpath("//input[@id='dismiss_all']"));
 //		DismissAll.click();
-	}
+//	}
 }

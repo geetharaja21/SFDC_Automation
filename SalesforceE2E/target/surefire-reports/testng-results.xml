@@ -1,143 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="sfdcsuite" duration-ms="90699" started-at="2019-07-21T01:21:52Z" finished-at="2019-07-21T01:23:22Z">
+  <suite name="sfdcsuite" duration-ms="160412" started-at="2019-07-21T06:53:18Z" finished-at="2019-07-21T06:55:59Z">
     <groups>
     </groups>
-    <test name="testngTest" duration-ms="90699" started-at="2019-07-21T01:21:52Z" finished-at="2019-07-21T01:23:22Z">
+    <test name="testngTest" duration-ms="160412" started-at="2019-07-21T06:53:18Z" finished-at="2019-07-21T06:55:59Z">
       <class name="com.selenium.SalesforceE2E.E2ESFDCTest">
-        <test-method status="PASS" signature="initialize_driver()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7dc222ae]" name="initialize_driver" is-config="true" duration-ms="2892" started-at="2019-07-21T01:21:52Z" finished-at="2019-07-21T01:21:55Z">
+        <test-method status="PASS" signature="initialize_driver()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@6483f5ae]" name="initialize_driver" is-config="true" duration-ms="3628" started-at="2019-07-21T06:53:18Z" finished-at="2019-07-21T06:53:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize_driver -->
-        <test-method status="PASS" signature="launchURL()[pri:1, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7dc222ae]" name="launchURL" duration-ms="7741" started-at="2019-07-21T01:21:55Z" finished-at="2019-07-21T01:22:02Z">
+        <test-method status="PASS" signature="launchURL()[pri:1, instance:com.selenium.SalesforceE2E.E2ESFDCTest@6483f5ae]" name="launchURL" duration-ms="7918" started-at="2019-07-21T06:53:22Z" finished-at="2019-07-21T06:53:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method status="PASS" signature="Tc1_login()[pri:2, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7dc222ae]" name="Tc1_login" duration-ms="22868" started-at="2019-07-21T01:22:02Z" finished-at="2019-07-21T01:22:25Z">
+        <test-method status="PASS" signature="Tc1_login()[pri:2, instance:com.selenium.SalesforceE2E.E2ESFDCTest@6483f5ae]" name="Tc1_login" duration-ms="21894" started-at="2019-07-21T06:53:30Z" finished-at="2019-07-21T06:53:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tc1_login -->
-        <test-method status="PASS" signature="Tc2_LoginError()[pri:3, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7dc222ae]" name="Tc2_LoginError" duration-ms="11502" started-at="2019-07-21T01:22:25Z" finished-at="2019-07-21T01:22:37Z">
+        <test-method status="PASS" signature="Tc2_LoginError()[pri:3, instance:com.selenium.SalesforceE2E.E2ESFDCTest@6483f5ae]" name="Tc2_LoginError" duration-ms="12006" started-at="2019-07-21T06:53:52Z" finished-at="2019-07-21T06:54:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tc2_LoginError -->
-        <test-method status="FAIL" signature="TC3_CheckRememberMe()[pri:4, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7dc222ae]" name="TC3_CheckRememberMe" duration-ms="25925" started-at="2019-07-21T01:22:37Z" finished-at="2019-07-21T01:23:03Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.selenium.SalesforceE2E.ReusableFunctions.mouseOver(ReusableFunctions.java:160)
-at com.selenium.SalesforceE2E.E2ESFDCTest.TC3_CheckRememberMe(E2ESFDCTest.java:127)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="Tc3_CheckRememberMe()[pri:4, instance:com.selenium.SalesforceE2E.E2ESFDCTest@6483f5ae]" name="Tc3_CheckRememberMe" duration-ms="32719" started-at="2019-07-21T06:54:04Z" finished-at="2019-07-21T06:54:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC3_CheckRememberMe -->
-        <test-method status="FAIL" signature="TC4A_ForgotPassword()[pri:5, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7dc222ae]" name="TC4A_ForgotPassword" duration-ms="3196" started-at="2019-07-21T01:23:03Z" finished-at="2019-07-21T01:23:06Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 8 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-FVP1BCF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62302}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\Venkat\AppData\Local\Temp\scoped_dir18728_30766}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: bee5af893343fc32053f37916903015e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 8 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-FVP1BCF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62302}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\Venkat\AppData\Local\Temp\scoped_dir18728_30766}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: bee5af893343fc32053f37916903015e
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:925)
-at com.selenium.SalesforceE2E.E2ESFDCTest.launchURL(E2ESFDCTest.java:49)
-at com.selenium.SalesforceE2E.E2ESFDCTest.TC4A_ForgotPassword(E2ESFDCTest.java:145)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        </test-method> <!-- Tc3_CheckRememberMe -->
+        <test-method status="PASS" signature="Tc4A_ForgotPassword()[pri:5, instance:com.selenium.SalesforceE2E.E2ESFDCTest@6483f5ae]" name="Tc4A_ForgotPassword" duration-ms="15242" started-at="2019-07-21T06:54:36Z" finished-at="2019-07-21T06:54:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC4A_ForgotPassword -->
-        <test-method status="PASS" signature="TC4B_ValidateLoginErrorMessage()[pri:6, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7dc222ae]" name="TC4B_ValidateLoginErrorMessage" duration-ms="16333" started-at="2019-07-21T01:23:06Z" finished-at="2019-07-21T01:23:22Z">
+        </test-method> <!-- Tc4A_ForgotPassword -->
+        <test-method status="PASS" signature="Tc4B_ValidateLoginErrorMessage()[pri:6, instance:com.selenium.SalesforceE2E.E2ESFDCTest@6483f5ae]" name="Tc4B_ValidateLoginErrorMessage" duration-ms="16761" started-at="2019-07-21T06:54:52Z" finished-at="2019-07-21T06:55:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC4B_ValidateLoginErrorMessage -->
-        <test-method status="PASS" signature="logger()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7dc222ae]" name="logger" is-config="true" duration-ms="204" started-at="2019-07-21T01:23:22Z" finished-at="2019-07-21T01:23:22Z">
+        </test-method> <!-- Tc4B_ValidateLoginErrorMessage -->
+        <test-method status="PASS" signature="Tc08_DeveloperConsole()[pri:7, instance:com.selenium.SalesforceE2E.E2ESFDCTest@6483f5ae]" name="Tc08_DeveloperConsole" duration-ms="49735" started-at="2019-07-21T06:55:08Z" finished-at="2019-07-21T06:55:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc08_DeveloperConsole -->
+        <test-method status="PASS" signature="logger()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@6483f5ae]" name="logger" is-config="true" duration-ms="480" started-at="2019-07-21T06:55:58Z" finished-at="2019-07-21T06:55:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
