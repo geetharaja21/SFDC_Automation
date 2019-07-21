@@ -187,4 +187,99 @@ public class E2ESFDCTest extends ReusableFunctions{
 		validateTextMessage(error,"Please check your username and password. If you still can't log in, contact your Salesforce administrator.","error");
 		Thread.sleep(3000);
 	}
+	
+	@Test(priority=7)
+	public static void MySettings() throws InterruptedException {
+		WebElement UserMenuChk1=driver.findElement(By.xpath("//div[@id='userNav-arrow']"));
+		mouseOver(UserMenuChk1,driver);
+		System.out.println("Checked for UserMenu DropDown");
+		Thread.sleep(5000);
+		
+		WebElement MySettings=driver.findElement(By.xpath("//a[contains(text(),'My Settings')]"));
+		clickButton(MySettings,"MySettings");
+		System.out.println("Clicked on My Settings Option Successfully");
+				
+		WebElement Personal=driver.findElement(By.xpath("//span[@id='PersonalInfo_font']"));
+		clickButton(Personal,"Personal");
+		System.out.println("Personal Link clicked successfully");
+				
+		WebElement LoginHistory=driver.findElement(By.xpath("//span[@id='LoginHistory_font']"));
+		clickButton(LoginHistory,"Login History");
+		System.out.println("Login History has been clicked Successfully");
+		
+		
+		WebElement DownloadLoginHistory=driver.findElement(By.xpath("//a[contains(text(),'Download login history for last six months, includ')]"));
+		clickButton(DownloadLoginHistory,"DownloadLoginHistory");
+		System.out.println("Downloaded login History successfully");
+		Thread.sleep(5000);
+		
+		WebElement DisplayAndLayout=driver.findElement(By.xpath("//span[@id='DisplayAndLayout_font']"));
+		clickButton(DisplayAndLayout,"DisplayAndLayout");
+		System.out.println("Display and Layout link clicked Successfully");
+				
+		WebElement CustomizeMyTabs=driver.findElement(By.xpath("//span[@id='CustomizeTabs_font']"));
+		clickButton(CustomizeMyTabs,"CustomizeMyTabs");
+		System.out.println("Customize My Tabs Link Clicked Successfully");
+				
+		WebElement CustomApp=driver.findElement(By.xpath("//select[@id='p4']"));
+		selectElementByIndexMethod(CustomApp,1);
+		//Select custom=new Select(CustomApp);
+		//custom.selectByIndex(1);
+		
+		WebElement AvailableTabs=driver.findElement(By.xpath("//select[@id='duel_select_0']"));
+		selectElementByValueMethod(AvailableTabs,"report");
+		//Select selectTabs=new Select(AvailableTabs);
+		//selectTabs.selectByValue("report");
+		
+		WebElement Add=driver.findElement(By.xpath("//img[@class='rightArrowIcon']"));
+		clickButton(Add,"Add");
+		System.out.println("Reports field has been added to Selected Tab List Successfully and also added on the links top");
+				
+		WebElement save1=driver.findElement(By.xpath("//input[@name='save']"));
+		clickButton(save1,"Save1");
+		Thread.sleep(5000);
+		
+		WebElement Email=driver.findElement(By.id("EmailSetup_font"));
+		clickButton(Email,"Email");
+		System.out.println("Email Link Clicked Successfully");
+				
+		WebElement MyEmailSettings=driver.findElement(By.xpath("//span[@id='EmailSettings_font']"));
+		clickButton(MyEmailSettings,"MyEmailSettings");
+		Thread.sleep(5000);
+		
+		WebElement sendThrough=driver.findElement(By.xpath("//input[@id='use_external_email1']"));
+		clickButton(sendThrough,"sendThrough");
+		
+		WebElement EmailName=driver.findElement(By.id("sender_name"));
+		EmailName.clear();
+		enterText(EmailName,"HemaRaja","Email Name");
+		//EmailName.sendKeys("HemaRaja");
+		
+		WebElement EmailAddr=driver.findElement(By.id("sender_email"));
+		EmailAddr.clear();
+		enterText(EmailName,"abc123@gmail.com","Email Address");
+		//EmailAddr.sendKeys("abc123@gmail.com");
+		Thread.sleep(5000);
+		
+		WebElement Bcc=driver.findElement(By.xpath("//input[@id='auto_bcc1']"));
+		radiobutton_Select(Bcc,"Click on Bcc");
+		
+		WebElement SaveButton=driver.findElement(By.xpath("//input[@name='save']"));
+		clickButton(SaveButton,"SaveButton");
+		System.out.println("Email Settings saved successfully");
+		
+		WebElement CalendarAndReminders=driver.findElement(By.id("CalendarAndReminders_font"));
+		clickButton(CalendarAndReminders,"CalendarAndReminders");
+		
+		WebElement ActivityReminder=driver.findElement(By.xpath("//span[@id='Reminders_font']"));
+		clickButton(ActivityReminder,"ActivityReminder");
+		
+		WebElement OpenReminder=driver.findElement(By.id("testbtn"));
+		clickButton(OpenReminder,"OpenReminder");
+		System.out.println("PopUP displayed successfully");
+		Thread.sleep(15000);
+			
+//		WebElement DismissAll=driver.findElement(By.xpath("//input[@id='dismiss_all']"));
+//		DismissAll.click();
+	}
 }

@@ -1,150 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="130.636" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="91.253" tests="6" errors="0" skipped="0" failures="2">
   <properties>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="JOB_NAME" value="Automation_Test"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="NUMBER_OF_PROCESSORS" value="8"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="JENKINS_HOME" value="C:\Users\Venkat\.jenkins"/>
-    <property name="FPS_BROWSER_USER_PROFILE_STRING" value="Default"/>
-    <property name="HUDSON_SERVER_COOKIE" value="e3e3270d170060c4"/>
-    <property name="POM_ARTIFACTID" value="SalesforceE2E"/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="RegionCode" value="NA"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk8\jre\lib\resources.jar;C:\Program Files\Java\jdk8\jre\lib\rt.jar;C:\Program Files\Java\jdk8\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk8\jre\lib\jsse.jar;C:\Program Files\Java\jdk8\jre\lib\jce.jar;C:\Program Files\Java\jdk8\jre\lib\charsets.jar;C:\Program Files\Java\jdk8\jre\lib\jfr.jar;C:\Program Files\Java\jdk8\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="POM_DISPLAYNAME" value="SalesforceE2E"/>
-    <property name="NODE_LABELS" value="master"/>
-    <property name="TEMP" value="C:\Users\Venkat\AppData\Local\Temp"/>
-    <property name="java.runtime.version" value="1.8.0_201-b09"/>
-    <property name="FPS_BROWSER_APP_PROFILE_STRING" value="Internet Explorer"/>
-    <property name="user.name" value="Venkat"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
-    <property name="ProgramFiles" value="C:\Program Files"/>
-    <property name="OnlineServices" value="Online Services"/>
-    <property name="PROMPT" value="$P$G"/>
-    <property name="user.language" value="en"/>
-    <property name="JOB_BASE_NAME" value="Automation_Test"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Automation_Test/16/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#16"/>
-    <property name="OneDrive" value="C:\Users\Venkat\OneDrive"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk8\jre\bin"/>
-    <property name="LOCALAPPDATA" value="C:\Users\Venkat\AppData\Local"/>
-    <property name="java.version" value="1.8.0_201"/>
-    <property name="PROCESSOR_LEVEL" value="6"/>
-    <property name="user.timezone" value="America/Los_Angeles"/>
-    <property name="USERNAME" value="Venkat"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="NODE_NAME" value="master"/>
-    <property name="OneDriveConsumer" value="C:\Users\Venkat\OneDrive"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk8\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="16"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="HOMEDRIVE" value="C:"/>
-    <property name="maven.conf" value="C:\Users\Venkat\Jars\apache-maven-3.6.1\conf"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="=::" value="::\"/>
-    <property name="SCITE_USERHOME" value="C:\Users\Venkat\AppData\Local\AutoIt v3\SciTE"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
-    <property name="user.country" value="US"/>
-    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk8\jre"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="os.version" value="10.0"/>
-    <property name="platformcode" value="KV"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Automation_Test/16/display/redirect"/>
-    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
-    <property name="TMP" value="C:\Users\Venkat\AppData\Local\Temp"/>
-    <property name="path.separator" value=";"/>
-    <property name="java.vm.version" value="25.201-b09"/>
-    <property name="user.variant" value=""/>
-    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/Automation_Test/display/redirect"/>
-    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
-    <property name="USERDOMAIN_ROAMINGPROFILE" value="DESKTOP-FVP1BCF"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk8"/>
-    <property name="ComSpec" value="C:\windows\system32\cmd.exe"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="HOMEPATH" value="\Users\Venkat"/>
-    <property name="POM_PACKAGING" value="jar"/>
-    <property name="user.script" value=""/>
-    <property name="COMPUTERNAME" value="DESKTOP-FVP1BCF"/>
-    <property name="POM_GROUPID" value="com.selenium"/>
-    <property name="user.home" value="C:\Users\Venkat"/>
-    <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-Automation_Test-16"/>
-    <property name="JENKINS_SERVER_COOKIE" value="e3e3270d170060c4"/>
-    <property name="HUDSON_URL" value="http://localhost:8080/"/>
-    <property name="ProgramData" value="C:\ProgramData"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="USERPROFILE" value="C:\Users\Venkat"/>
-    <property name="CLASSPATH" value=""/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Users\Venkat\Jars\apache-maven-3.6.1/bin;C:\Program Files\Java\jdk8/bin;C:\Program Files\Java\jdk8/bin;&quot;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin&quot;;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk8\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Users\Venkat\Jars\apache-maven-3.6.1\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Users\Venkat\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Venkat\AppData\Local\Programs\Microsoft VS Code\bin;."/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="APPDATA" value="C:\Users\Venkat\AppData\Roaming"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="maven.home" value="C:\Users\Venkat\Jars\apache-maven-3.6.1"/>
-    <property name="java.class.path" value="C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Users\Venkat\Jars\apache-maven-3.6.1\boot\plexus-classworlds-2.6.0.jar;C:\Users\Venkat\Jars\apache-maven-3.6.1/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Users\Venkat\Jars\apache-maven-3.6.1 C:\Users\Venkat\.jenkins\war\WEB-INF\lib\remoting-3.33.jar C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 62248"/>
-    <property name="Path" value="C:\Program Files\Java\jdk8/bin;&quot;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin&quot;;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk8\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Users\Venkat\Jars\apache-maven-3.6.1\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Users\Venkat\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Venkat\AppData\Local\Programs\Microsoft VS Code\bin"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
-    <property name="PATH+JDK" value="C:\Program Files\Java\jdk8/bin"/>
-    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 142 Stepping 10, GenuineIntel"/>
-    <property name="SESSIONNAME" value="Console"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="M2_HOME" value="C:\Users\Venkat\Jars\apache-maven-3.6.1"/>
-    <property name="java.io.tmpdir" value="C:\Users\Venkat\AppData\Local\Temp\"/>
-    <property name="OS" value="Windows_NT"/>
-    <property name="HUDSON_HOME" value="C:\Users\Venkat\.jenkins"/>
-    <property name="PATH+MAVEN" value="C:\Users\Venkat\Jars\apache-maven-3.6.1/bin"/>
-    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/Automation_Test/16/"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="SystemRoot" value="C:\windows"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk8\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
-    <property name="user.dir" value="C:\Users\Venkat\MavenProjects\SalesforceE2E"/>
-    <property name="JOB_URL" value="http://localhost:8080/job/Automation_Test/"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
     <property name="LOGONSERVER" value="\\DESKTOP-FVP1BCF"/>
-    <property name="USERDOMAIN" value="DESKTOP-FVP1BCF"/>
-    <property name="line.separator" value="&#10;"/>
-    <property name="MAVEN_HOME" value="C:\Users\Venkat\Jars\apache-maven-3.6.1"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="16"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk8\jre"/>
+    <property name="NODE_NAME" value="master"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
-    <property name="PROCESSOR_REVISION" value="8e0a"/>
-    <property name="ProgramW6432" value="C:\Program Files"/>
-    <property name="windir" value="C:\windows"/>
-    <property name="=C:" value="C:\Users\Venkat\jenkins"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="SystemDrive" value="C:"/>
-    <property name="maven3.interceptor" value="C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar"/>
-    <property name="WORKSPACE" value="C:\Users\Venkat\.jenkins\workspace\Automation_Test"/>
-    <property name="maven3.interceptor.common" value="C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar"/>
-    <property name="java.specification.version" value="1.8"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk8\jre\lib\endorsed"/>
     <property name="PSModulePath" value="C:\Program Files (x86)\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\AutoIt3\AutoItX"/>
+    <property name="=::" value="::\"/>
+    <property name="USERDOMAIN" value="DESKTOP-FVP1BCF"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="JOB_NAME" value="SFDC_AutomationGit"/>
+    <property name="COMPUTERNAME" value="DESKTOP-FVP1BCF"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="user.name" value="Venkat"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="windir" value="C:\windows"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 142 Stepping 10, GenuineIntel"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="LOCALAPPDATA" value="C:\Users\Venkat\AppData\Local"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/SFDC_AutomationGit/7/display/redirect?page=changes"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="user.script" value=""/>
+    <property name="path.separator" value=";"/>
+    <property name="NUMBER_OF_PROCESSORS" value="8"/>
+    <property name="BUILD_TAG" value="jenkins-SFDC_AutomationGit-7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Users\Venkat\Jars\apache-maven-3.6.1 C:\Users\Venkat\.jenkins\war\WEB-INF\lib\remoting-3.33.jar C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 61998"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/"/>
+    <property name="JENKINS_SERVER_COOKIE" value="e3e3270d170060c4"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="Path" value="C:\Program Files\Java\jdk8/bin;&quot;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin&quot;;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk8\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Users\Venkat\Jars\apache-maven-3.6.1\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Users\Venkat\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Venkat\AppData\Local\Programs\Microsoft VS Code\bin"/>
+    <property name="GIT_COMMIT" value="199032445e395f8d7f0959302cb9560724219de4"/>
+    <property name="java.io.tmpdir" value="C:\Users\Venkat\AppData\Local\Temp\"/>
+    <property name="APPDATA" value="C:\Users\Venkat\AppData\Roaming"/>
+    <property name="user.language" value="en"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/SFDC_AutomationGit/7/"/>
+    <property name="M2_HOME" value="C:\Users\Venkat\Jars\apache-maven-3.6.1"/>
+    <property name="=C:" value="C:\Users\Venkat\jenkins"/>
+    <property name="java.vm.info" value="mixed mode"/>
     <property name="DriverData" value="C:\Windows\System32\Drivers\DriverData"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="BUILD_DISPLAY_NAME" value="#7"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="HUDSON_SERVER_COOKIE" value="e3e3270d170060c4"/>
+    <property name="MAVEN_HOME" value="C:\Users\Venkat\Jars\apache-maven-3.6.1"/>
+    <property name="SESSIONNAME" value="Console"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="maven3.interceptor.common" value="C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="HOMEPATH" value="\Users\Venkat"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="7"/>
+    <property name="maven3.interceptor" value="C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Users\Venkat\Jars\apache-maven-3.6.1/bin;C:\Program Files\Java\jdk8/bin;C:\Program Files\Java\jdk8/bin;&quot;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin&quot;;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk8\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Users\Venkat\Jars\apache-maven-3.6.1\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Users\Venkat\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Venkat\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="HOMEDRIVE" value="C:"/>
+    <property name="POM_GROUPID" value="com.selenium"/>
+    <property name="POM_ARTIFACTID" value="SalesforceE2E"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/SFDC_AutomationGit/"/>
+    <property name="platformcode" value="KV"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="199032445e395f8d7f0959302cb9560724219de4"/>
+    <property name="OneDrive" value="C:\Users\Venkat\OneDrive"/>
+    <property name="GIT_BRANCH" value="origin/master"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/SFDC_AutomationGit/7/display/redirect"/>
+    <property name="JENKINS_HOME" value="C:\Users\Venkat\.jenkins"/>
+    <property name="BUILD_ID" value="7"/>
+    <property name="TEMP" value="C:\Users\Venkat\AppData\Local\Temp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk8\jre\bin"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="user.variant" value=""/>
+    <property name="PROCESSOR_REVISION" value="8e0a"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="HUDSON_HOME" value="C:\Users\Venkat\.jenkins"/>
+    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="199032445e395f8d7f0959302cb9560724219de4"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="PATH+MAVEN" value="C:\Users\Venkat\Jars\apache-maven-3.6.1/bin"/>
+    <property name="USERDOMAIN_ROAMINGPROFILE" value="DESKTOP-FVP1BCF"/>
+    <property name="SCITE_USERHOME" value="C:\Users\Venkat\AppData\Local\AutoIt v3\SciTE"/>
+    <property name="PROMPT" value="$P$G"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk8"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="USERPROFILE" value="C:\Users\Venkat"/>
+    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/SFDC_AutomationGit/display/redirect"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk8\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Venkat"/>
+    <property name="USERNAME" value="Venkat"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="user.dir" value="C:\Users\Venkat\git\SFDC_Automation\SalesforceE2E"/>
+    <property name="maven.conf" value="C:\Users\Venkat\Jars\apache-maven-3.6.1\conf"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="TMP" value="C:\Users\Venkat\AppData\Local\Temp"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.class.path" value="C:\Users\Venkat\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Users\Venkat\Jars\apache-maven-3.6.1\boot\plexus-classworlds-2.6.0.jar;C:\Users\Venkat\Jars\apache-maven-3.6.1/conf/logging"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="RegionCode" value="NA"/>
+    <property name="OneDriveConsumer" value="C:\Users\Venkat\OneDrive"/>
+    <property name="WORKSPACE" value="C:\Users\Venkat\.jenkins\workspace\SFDC_AutomationGit"/>
+    <property name="ComSpec" value="C:\windows\system32\cmd.exe"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="FPS_BROWSER_APP_PROFILE_STRING" value="Internet Explorer"/>
+    <property name="SystemRoot" value="C:\windows"/>
+    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="FPS_BROWSER_USER_PROFILE_STRING" value="Default"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk8\jre\lib\resources.jar;C:\Program Files\Java\jdk8\jre\lib\rt.jar;C:\Program Files\Java\jdk8\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk8\jre\lib\jsse.jar;C:\Program Files\Java\jdk8\jre\lib\jce.jar;C:\Program Files\Java\jdk8\jre\lib\charsets.jar;C:\Program Files\Java\jdk8\jre\lib\jfr.jar;C:\Program Files\Java\jdk8\jre\classes"/>
+    <property name="OnlineServices" value="Online Services"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk8/bin"/>
+    <property name="user.country" value="US"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="maven.home" value="C:\Users\Venkat\Jars\apache-maven-3.6.1"/>
+    <property name="JOB_BASE_NAME" value="SFDC_AutomationGit"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="POM_DISPLAYNAME" value="SalesforceE2E"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="GIT_URL" value="https://github.com/geetharaja21/SFDC_Automation.git"/>
   </properties>
-  <testcase name="launchURL" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="12.245"/>
-  <testcase name="Tc1_login" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="25.784"/>
-  <testcase name="Tc2_LoginError" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="14.27"/>
-  <testcase name="TC3_CheckRememberMe" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="35.013"/>
-  <testcase name="TC4A_ForgotPassword" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="19.574"/>
-  <testcase name="TC4B_ValidateLoginErrorMessage" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="20.092"/>
+  <testcase name="launchURL" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="7.742"/>
+  <testcase name="Tc1_login" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="22.867"/>
+  <testcase name="Tc2_LoginError" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="11.502"/>
+  <testcase name="TC3_CheckRememberMe" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="25.94">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.selenium.SalesforceE2E.E2ESFDCTest.TC3_CheckRememberMe(E2ESFDCTest.java:127)
+</failure>
+    <system-out><![CDATA[Application launched successfully
+Pass: hasita.venkat-xhkn@force.com is entered in UserNamefield..
+Username passed successfully
+Pass: Confidence21@ is entered in PassWordfield..
+Password entered successfully
+Remember me checked successfully
+Pass: Login is clicked
+Enter login Button passed successfully
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 21042
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563672158.179][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 20, 2019 6:22:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TC4A_ForgotPassword" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="3.199">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=75.0.3770.142)&#10;  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 8 milliseconds&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;DESKTOP-FVP1BCF&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62302}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\Venkat\AppData\Local\Temp\scoped_dir18728_30766}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: bee5af893343fc32053f37916903015e" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.142)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-FVP1BCF', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62302}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\Venkat\AppData\Local\Temp\scoped_dir18728_30766}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bee5af893343fc32053f37916903015e
+	at com.selenium.SalesforceE2E.E2ESFDCTest.launchURL(E2ESFDCTest.java:49)
+	at com.selenium.SalesforceE2E.E2ESFDCTest.TC4A_ForgotPassword(E2ESFDCTest.java:145)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 19624
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563672184.113][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 20, 2019 6:23:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TC4B_ValidateLoginErrorMessage" classname="com.selenium.SalesforceE2E.E2ESFDCTest" time="16.333"/>
 </testsuite>
