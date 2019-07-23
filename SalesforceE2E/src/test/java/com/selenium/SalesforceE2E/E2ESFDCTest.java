@@ -1,5 +1,6 @@
 package com.selenium.SalesforceE2E;
 
+import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -310,4 +311,113 @@ public class E2ESFDCTest extends ReusableFunctions{
 			
 		driver.close();
 }
+	@Test(priority=9)
+	public static void TC08_MyProfile() throws InterruptedException, IOException {
+		
+		CreateTestScriptReport("TC08_MyProfile");
+		launchURL();
+		Tc1_login();
+		WebElement UserMenuChk1 = driver.findElement(By.xpath("//div[@id='userNav-arrow']"));
+		mouseOver(UserMenuChk1,driver);
+		System.out.println("Checked for UserMenu DropDown");
+		Thread.sleep(5000);
+		
+		WebElement MyProfile = driver.findElement(By.xpath("//a[contains(text(),'My Profile')]"));
+		clickButton(MyProfile,"MyProfile");
+		System.out.println("Clicked on MyProfile Option Successfully");
+		
+		WebElement EditLink = driver.findElement(By.xpath("//a[@class='contactInfoLaunch editLink']//img"));
+		clickButton(EditLink,"Edit Link");
+		System.out.println("Clicked on edit button successfully");
+				
+		WebElement frame = driver.findElement(By.id("contactInfoContentId"));
+		switchtoFrame(frame,driver);
+		System.out.println("Switched to frame:");
+		Thread.sleep(3000);
+		
+		WebElement AboutTab = driver.findElement(By.xpath("//a[contains(text(),'About')]"));
+		mouseOver(AboutTab,driver);
+		System.out.println("Clicked on AboutTab Successfully");
+				
+		WebElement LastName=driver.findElement(By.id("lastName"));
+		LastName.clear();
+		LastName.sendKeys("RajaSrinivasan");
+		
+		WebElement saveAll=driver.findElement(By.xpath("//input[@class='zen-btn zen-primaryBtn zen-pas']"));
+		clickButton(saveAll,"Save All");
+		System.out.println("Save All done successfully");
+		Thread.sleep(5000);
+		
+		switchToParentWindow(driver);
+		WebElement post=driver.findElement(By.xpath("//span[contains(@class,'publisherattachtext')][contains(text(),'Post')]"));
+		clickButton(post,"Post");
+		Thread.sleep(5000);
+		
+		WebElement frame1=driver.findElement(By.xpath("//iframe[@title='Rich Text Editor, publisherRichTextEditor']"));
+		switchtoFrame(frame1,driver);
+		Thread.sleep(3000);
+		
+		String text="This is my first Post";
+		WebElement postBody=driver.findElement(By.xpath("/html[1]/body[1]"));
+		enterText(postBody,text,"Post body");
+		//postBody.sendKeys(text);
+		
+		switchToParentWindow(driver);
+		Thread.sleep(5000);
+		
+		WebElement Share=driver.findElement(By.xpath("//input[@id='publishersharebutton']"));
+		clickButton(Share,"Share");
+		System.out.println("Posted successfully and the text entrered is displayed");
+		Thread.sleep(3000);
+		
+		WebElement File=driver.findElement(By.xpath("//span[contains(@class,'publisherattachtext')][contains(text(),'File')]"));
+		clickButton(File,"File");
+		Thread.sleep(4000);
+		
+		WebElement UploadAFile=driver.findElement(By.id("chatterUploadFileAction"));
+		clickButton(UploadAFile,"UploadFile");
+		
+		WebElement ChooseFile=driver.findElement(By.id("chatterFile"));
+		clickButton(ChooseFile,"choosefile");
+		Thread.sleep(3000);
+		Runtime.getRuntime().exec("C:\\Users\\Venkat\\Documents\\FileUpload.exe");
+		Thread.sleep(5000);
+		//ChooseFile.sendKeys("C:\\Users\\Venkat\\eclipse-workspace\\TestNGDemo\\src\\Demo1.java");
+				
+		WebElement ShareFile=driver.findElement(By.xpath("//input[@id='publishersharebutton']"));
+		clickButton(ShareFile,"Share File");
+		System.out.println("Selected file posted successfully");
+	
+		//WebElement profilepic=driver.findElement(By.xpath("//span[@id='displayBadge']"));
+		WebElement profile=driver.findElement(By.xpath("//div[@class='photoUploadSection']"));
+		mouseOver(profile,driver);
+		
+		WebElement AddPhoto=driver.findElement(By.id("uploadLink"));
+		clickButton(AddPhoto,"Add Photo");
+		System.out.println("Add Photo clicked");
+		Thread.sleep(3000);
+		
+		WebElement frame2 =driver.findElement(By.id("uploadPhotoContentId"));
+		switchtoFrame(frame2,driver);
+
+		System.out.println("Switched to frame");
+		Thread.sleep(7000);
+		WebElement choosepic=driver.findElement(By.xpath("//input[@id='j_id0:uploadFileForm:uploadInputFile']"));
+		clickButton(choosepic,"Choose Picture");
+		Thread.sleep(10000);
+		Runtime.getRuntime().exec("C:\\Users\\Venkat\\Documents\\PicUpload1.exe");
+		//choosefile.sendKeys("C:\\Users\\Venkat\\Pictures\\bird.jpg");
+		
+		Thread.sleep(4000);		
+		WebElement SaveButton=driver.findElement(By.xpath("//input[@id='j_id0:uploadFileForm:uploadBtn']"));
+		clickButton(SaveButton,"SaveButton");
+		Thread.sleep(30000);
+		System.out.println("selected pic successfully");
+				
+		WebElement save=driver.findElement(By.xpath("//input[@id='j_id0:j_id7:save']"));
+		clickButton(save,"Save");
+		System.out.println("Photo has been uploaded successfully");
+		
+		driver.close();
+	}
 }
