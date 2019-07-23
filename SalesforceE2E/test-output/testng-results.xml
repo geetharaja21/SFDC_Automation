@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="128474" started-at="2019-07-19T20:50:15Z" finished-at="2019-07-19T20:52:23Z">
+  <suite name="Default suite" duration-ms="179506" started-at="2019-07-21T07:14:32Z" finished-at="2019-07-21T07:17:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="128474" started-at="2019-07-19T20:50:15Z" finished-at="2019-07-19T20:52:23Z">
+    <test name="Default test" duration-ms="179506" started-at="2019-07-21T07:14:32Z" finished-at="2019-07-21T07:17:31Z">
       <class name="com.selenium.SalesforceE2E.E2ESFDCTest">
-        <test-method status="PASS" signature="initialize_driver()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="initialize_driver" is-config="true" duration-ms="2930" started-at="2019-07-19T20:50:15Z" finished-at="2019-07-19T20:50:18Z">
+        <test-method status="PASS" signature="initialize_driver()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@38afe297]" name="initialize_driver" is-config="true" duration-ms="2955" started-at="2019-07-21T07:14:32Z" finished-at="2019-07-21T07:14:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize_driver -->
-        <test-method status="PASS" signature="launchURL()[pri:1, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="launchURL" duration-ms="10653" started-at="2019-07-19T20:50:18Z" finished-at="2019-07-19T20:50:29Z">
+        <test-method status="PASS" signature="launchURL()[pri:1, instance:com.selenium.SalesforceE2E.E2ESFDCTest@38afe297]" name="launchURL" duration-ms="7714" started-at="2019-07-21T07:14:35Z" finished-at="2019-07-21T07:14:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method status="PASS" signature="Tc1_login()[pri:2, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="Tc1_login" duration-ms="24547" started-at="2019-07-19T20:50:29Z" finished-at="2019-07-19T20:50:53Z">
+        <test-method status="PASS" signature="Tc1_login()[pri:2, instance:com.selenium.SalesforceE2E.E2ESFDCTest@38afe297]" name="Tc1_login" duration-ms="22080" started-at="2019-07-21T07:14:42Z" finished-at="2019-07-21T07:15:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tc1_login -->
-        <test-method status="PASS" signature="Tc2_LoginError()[pri:3, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="Tc2_LoginError" duration-ms="14561" started-at="2019-07-19T20:50:53Z" finished-at="2019-07-19T20:51:08Z">
+        <test-method status="PASS" signature="Tc2_LoginError()[pri:3, instance:com.selenium.SalesforceE2E.E2ESFDCTest@38afe297]" name="Tc2_LoginError" duration-ms="12135" started-at="2019-07-21T07:15:04Z" finished-at="2019-07-21T07:15:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tc2_LoginError -->
-        <test-method status="PASS" signature="TC3_CheckRememberMe()[pri:4, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="TC3_CheckRememberMe" duration-ms="37168" started-at="2019-07-19T20:51:08Z" finished-at="2019-07-19T20:51:45Z">
+        <test-method status="PASS" signature="Tc3_CheckRememberMe()[pri:4, instance:com.selenium.SalesforceE2E.E2ESFDCTest@38afe297]" name="Tc3_CheckRememberMe" duration-ms="31939" started-at="2019-07-21T07:15:17Z" finished-at="2019-07-21T07:15:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC3_CheckRememberMe -->
-        <test-method status="PASS" signature="TC4A_ForgotPassword()[pri:5, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="TC4A_ForgotPassword" duration-ms="18713" started-at="2019-07-19T20:51:45Z" finished-at="2019-07-19T20:52:04Z">
+        </test-method> <!-- Tc3_CheckRememberMe -->
+        <test-method status="PASS" signature="Tc4A_ForgotPassword()[pri:5, instance:com.selenium.SalesforceE2E.E2ESFDCTest@38afe297]" name="Tc4A_ForgotPassword" duration-ms="15075" started-at="2019-07-21T07:15:49Z" finished-at="2019-07-21T07:16:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC4A_ForgotPassword -->
-        <test-method status="PASS" signature="TC4B_ValidateLoginErrorMessage()[pri:6, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="TC4B_ValidateLoginErrorMessage" duration-ms="19410" started-at="2019-07-19T20:52:04Z" finished-at="2019-07-19T20:52:23Z">
+        </test-method> <!-- Tc4A_ForgotPassword -->
+        <test-method status="PASS" signature="Tc4B_ValidateLoginErrorMessage()[pri:6, instance:com.selenium.SalesforceE2E.E2ESFDCTest@38afe297]" name="Tc4B_ValidateLoginErrorMessage" duration-ms="16456" started-at="2019-07-21T07:16:04Z" finished-at="2019-07-21T07:16:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC4B_ValidateLoginErrorMessage -->
-        <test-method status="PASS" signature="logger()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@7f77e91b]" name="logger" is-config="true" duration-ms="447" started-at="2019-07-19T20:52:23Z" finished-at="2019-07-19T20:52:23Z">
+        </test-method> <!-- Tc4B_ValidateLoginErrorMessage -->
+        <test-method status="PASS" signature="Tc08_DeveloperConsole()[pri:7, instance:com.selenium.SalesforceE2E.E2ESFDCTest@38afe297]" name="Tc08_DeveloperConsole" duration-ms="70567" started-at="2019-07-21T07:16:20Z" finished-at="2019-07-21T07:17:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc08_DeveloperConsole -->
+        <test-method status="PASS" signature="logger()[pri:0, instance:com.selenium.SalesforceE2E.E2ESFDCTest@38afe297]" name="logger" is-config="true" duration-ms="557" started-at="2019-07-21T07:17:31Z" finished-at="2019-07-21T07:17:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
